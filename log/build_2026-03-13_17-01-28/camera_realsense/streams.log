@@ -1,0 +1,37 @@
+[1.199s] Invoking command in '/home/rocky/Powersense_RC_Car/src/camera_realsense': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rocky/Powersense_RC_Car/build/camera_realsense/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rocky/Powersense_RC_Car/install/camera_realsense/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_realsense build --build-base /home/rocky/Powersense_RC_Car/build/camera_realsense/build install --record /home/rocky/Powersense_RC_Car/build/camera_realsense/install.log --single-version-externally-managed install_data
+[1.506s] running egg_info
+[1.507s] creating ../../build/camera_realsense/camera_realsense.egg-info
+[1.527s] writing ../../build/camera_realsense/camera_realsense.egg-info/PKG-INFO
+[1.527s] writing dependency_links to ../../build/camera_realsense/camera_realsense.egg-info/dependency_links.txt
+[1.527s] writing entry points to ../../build/camera_realsense/camera_realsense.egg-info/entry_points.txt
+[1.528s] writing requirements to ../../build/camera_realsense/camera_realsense.egg-info/requires.txt
+[1.528s] writing top-level names to ../../build/camera_realsense/camera_realsense.egg-info/top_level.txt
+[1.528s] writing manifest file '../../build/camera_realsense/camera_realsense.egg-info/SOURCES.txt'
+[1.568s] reading manifest file '../../build/camera_realsense/camera_realsense.egg-info/SOURCES.txt'
+[1.568s] writing manifest file '../../build/camera_realsense/camera_realsense.egg-info/SOURCES.txt'
+[1.569s] running build
+[1.569s] running build_py
+[1.569s] creating /home/rocky/Powersense_RC_Car/build/camera_realsense/build
+[1.569s] creating /home/rocky/Powersense_RC_Car/build/camera_realsense/build/lib
+[1.569s] creating /home/rocky/Powersense_RC_Car/build/camera_realsense/build/lib/camera_realsense
+[1.569s] copying camera_realsense/__init__.py -> /home/rocky/Powersense_RC_Car/build/camera_realsense/build/lib/camera_realsense
+[1.569s] copying camera_realsense/camera_interface_node.py -> /home/rocky/Powersense_RC_Car/build/camera_realsense/build/lib/camera_realsense
+[1.570s] running install
+[1.576s] running install_lib
+[1.597s] creating /home/rocky/Powersense_RC_Car/install/camera_realsense/lib/python3.12/site-packages/camera_realsense
+[1.597s] copying /home/rocky/Powersense_RC_Car/build/camera_realsense/build/lib/camera_realsense/__init__.py -> /home/rocky/Powersense_RC_Car/install/camera_realsense/lib/python3.12/site-packages/camera_realsense
+[1.597s] copying /home/rocky/Powersense_RC_Car/build/camera_realsense/build/lib/camera_realsense/camera_interface_node.py -> /home/rocky/Powersense_RC_Car/install/camera_realsense/lib/python3.12/site-packages/camera_realsense
+[1.598s] byte-compiling /home/rocky/Powersense_RC_Car/install/camera_realsense/lib/python3.12/site-packages/camera_realsense/__init__.py to __init__.cpython-312.pyc
+[1.598s] byte-compiling /home/rocky/Powersense_RC_Car/install/camera_realsense/lib/python3.12/site-packages/camera_realsense/camera_interface_node.py to camera_interface_node.cpython-312.pyc
+[1.599s] running install_data
+[1.599s] creating /home/rocky/Powersense_RC_Car/install/camera_realsense/share/ament_index
+[1.599s] creating /home/rocky/Powersense_RC_Car/install/camera_realsense/share/ament_index/resource_index
+[1.599s] creating /home/rocky/Powersense_RC_Car/install/camera_realsense/share/ament_index/resource_index/packages
+[1.600s] copying resource/camera_realsense -> /home/rocky/Powersense_RC_Car/install/camera_realsense/share/ament_index/resource_index/packages
+[1.600s] copying package.xml -> /home/rocky/Powersense_RC_Car/install/camera_realsense/share/camera_realsense
+[1.600s] running install_egg_info
+[1.621s] Copying ../../build/camera_realsense/camera_realsense.egg-info to /home/rocky/Powersense_RC_Car/install/camera_realsense/lib/python3.12/site-packages/camera_realsense-0.0.0-py3.12.egg-info
+[1.622s] running install_scripts
+[1.760s] Installing camera_interface_node script to /home/rocky/Powersense_RC_Car/install/camera_realsense/lib/camera_realsense
+[1.760s] writing list of installed files to '/home/rocky/Powersense_RC_Car/build/camera_realsense/install.log'
+[1.790s] Invoked command in '/home/rocky/Powersense_RC_Car/src/camera_realsense' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rocky/Powersense_RC_Car/build/camera_realsense/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rocky/Powersense_RC_Car/install/camera_realsense/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_realsense build --build-base /home/rocky/Powersense_RC_Car/build/camera_realsense/build install --record /home/rocky/Powersense_RC_Car/build/camera_realsense/install.log --single-version-externally-managed install_data
