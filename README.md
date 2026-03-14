@@ -1,5 +1,7 @@
 # Powersense_RC_Car: Energy-Efficient Autonomous Navigation Benchmarking
 
+![Powersense RC Car](mystuff/github_pictures/RC_Car.webp)
+
 With generous help from Dr. Marco Brocanelli and his lab, I am building a research-oriented framework designed to profile the energy-to-performance trade-offs of autonomous platforms. By integrating high-fidelity sensors (Intel RealSense & RPLidar) with variable computational and network constraints, this project aims to identify the sweet spot for power efficiency in edge robotics.
 
 ## 🚀 Project Overview
