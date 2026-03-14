@@ -40,7 +40,56 @@ Where $P$ is power in Watts, $t$ is time, and $d$ is total distance traveled.
 ├── notes/                   # Research notes and datasheets
 └── src/
     └── camera_realsense/    # ROS 2 package for RealSense integration
+    └── rplidar_a2m8/         # ROS 2 package for RPLidar A2M8 LaserScan publishing
 ```
 
 ## 📈 Getting Started
 *(Instructions for building and running the ROS 2 workspace will be added as the project develops.)*
+
+## RPLidar A2M8 ROS 2 Node
+The package `rplidar_a2m8` publishes `sensor_msgs/LaserScan` on `/scan`.
+
+### 1. Environment Setup Order (required)
+```bash
+source /home/rocky/Powersense_RC_Car/venv/bin/activate
+export PYTHONPATH="$(python3 -c 'import site; print(site.getsitepackages()[0])'):$PYTHONPATH"
+source /opt/ros/jazzy/setup.bash
+```
+
+### 2. Install Python Driver
+```bash
+pip install rplidar-roboticia
+```
+
+### 3. Build and Source Overlay
+```bash
+cd /home/rocky/Powersense_RC_Car
+colcon build --packages-select rplidar_a2m8
+source /home/rocky/Powersense_RC_Car/install/setup.bash
+```
+
+### 4. Launch Node
+```bash
+ros2 launch rplidar_a2m8 rplidar.launch.py
+```
+
+Or use helper script:
+```bash
+bash /home/rocky/Powersense_RC_Car/mystuff/custom_commands/start_rplidar.sh
+```
+
+### 5. Verify Topic
+```bash
+ros2 topic list
+ros2 topic echo /scan --once
+ros2 topic hz /scan
+```
+
+### Launch Parameters
+- `port` (default: `/dev/ttyUSB0`)
+- `baudrate` (default: `115200`)
+- `frame_id` (default: `laser`)
+- `topic` (default: `/scan`)
+- `scan_mode` (default: `normal`)
+- `inverted` (default: `false`)
+- `reversed` (default: `false`)

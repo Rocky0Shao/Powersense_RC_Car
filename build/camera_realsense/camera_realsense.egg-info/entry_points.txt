@@ -1,2 +1,0 @@
-[console_scripts]
-camera_interface_node = camera_realsense.camera_interface_node:main
