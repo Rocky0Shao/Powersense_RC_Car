@@ -16,6 +16,16 @@ My goal is to provide a systematic method to measure how different configuration
 * **Optimization:** Quantized vs. Full-precision neural networks for path planning.
 * **Model Scaling:** Larger vs. smaller object detection models (e.g., YOLOv8-full vs. YOLOv8-n).
 
+---
+
+> 📣 **Follow the Build!**
+>
+> I post daily progress updates, benchmarks, and lessons learned on the Open Robotics forum:
+>
+> 🔗 [**Energy-Efficient Autonomous Navigation Benchmarking** — Open Robotics Discourse](https://discourse.openrobotics.org/t/energy-efficient-autonomous-navigation-benchmarking/53208?u=rocky_shao)
+
+---
+
 ## 🛠 Hardware Stack
 | Component | Model | Role |
 | :--- | :--- | :--- |
@@ -23,7 +33,8 @@ My goal is to provide a systematic method to measure how different configuration
 | **Vision** | Intel RealSense D455 | Stereo depth & VSLAM |
 | **Lidar** | RPLidar A2M8 | 2D/3D Obstacle detection |
 | **Compute** | Jetson Nano | Onboard inference |
-| **Power Mon.** | *To be determined* | Real-time power/current sensing |
+| **Power Mon.** | TI INA3221 | 3-ch voltage/current/power sensing |
+| **Power Mon.** | Adafruit INA260 | High-side current/voltage/power sensing |
 
 ## 📊 Benchmarking Methodology
 We evaluate configurations using the Energy-per-Meter (EpM) metric:
@@ -39,10 +50,14 @@ Where $P$ is power in Watts, $t$ is time, and $d$ is total distance traveled.
 
 ## 📂 Repository Structure
 ```text
-├── notes/                   # Research notes and datasheets
+├── hardware_testing/
+│   └── Power_Monitor_INA3221/   # ESP32 PlatformIO firmware for INA3221 testing
+├── mystuff/                     # Datasheets, pictures, and helper scripts
+├── notes/                       # Research notes and datasheets
 └── src/
-    └── camera_realsense/    # ROS 2 package for RealSense integration
-    └── rplidar_a2m8/         # ROS 2 package for RPLidar A2M8 LaserScan publishing
+    ├── camera_realsense/        # ROS 2 package for RealSense integration
+    ├── power_monitor/           # ROS 2 package for power monitoring (WIP)
+    └── rplidar_a2m8/            # ROS 2 package for RPLidar A2M8 LaserScan publishing
 ```
 
 ## 📈 Getting Started
