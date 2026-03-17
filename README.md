@@ -21,7 +21,7 @@ My goal is to provide a systematic method to measure how different configuration
 | :--- | :--- | :--- |
 | **Chassis** | RC Chassis | Mobile platform |
 | **Vision** | Intel RealSense D455 | Stereo depth & VSLAM |
-| **Lidar** | RPLidar A2 | 2D/3D Obstacle detection |
+| **Lidar** | RPLidar A2M8 | 2D/3D Obstacle detection |
 | **Compute** | Jetson Nano | Onboard inference |
 | **Power Mon.** | *To be determined* | Real-time power/current sensing |
 
