@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'bridge_node = power_monitor.serial_bridge:main'
         ],
     },
 )

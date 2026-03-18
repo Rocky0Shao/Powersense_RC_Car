@@ -31,26 +31,26 @@ void loop() {
   // Calculate Power (Watts)
   float power = busVoltage * current;
 
-//   // Print as clean CSV for your Ubuntu laptop C++ script to read:
-//   // Voltage,Current,Power
-//   Serial.print(busVoltage);
-//   Serial.print(",");
-//   Serial.print(current);
-//   Serial.print(",");
-//   Serial.println(power);
+  // Print as clean CSV for your Ubuntu laptop C++ script to read:
+  // Voltage,Current,Power
+  Serial.print(busVoltage,4);
+  Serial.print(",");
+  Serial.print(current,4);
+  Serial.print(",");
+  Serial.println(power,4);
 
-// Human-readable formatting
-  Serial.print("Voltage: "); 
-  Serial.print(busVoltage); 
-  Serial.print(" V  |  ");
+// // Human-readable formatting
+//   Serial.print("Voltage: "); 
+//   Serial.print(busVoltage); 
+//   Serial.print(" V  |  ");
   
-  Serial.print("Current: "); 
-  Serial.print(current, 4); 
-  Serial.print(" A  |  ");
+//   Serial.print("Current: "); 
+//   Serial.print(current, 4); 
+//   Serial.print(" A  |  ");
   
-  Serial.print("Power: "); 
-  Serial.print(power, 4); 
-  Serial.println(" W");
+//   Serial.print("Power: "); 
+//   Serial.print(power, 4); 
+//   Serial.println(" W");
 
   // 10Hz publish rate (100ms delay)
   delay(100); 
