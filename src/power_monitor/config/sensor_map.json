@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "notes": "Map ESP32 sensor_id/channel_id pairs to human-readable names and hardware metadata.",
+  "sensors": [
+    {
+      "sensor_id": 0,
+      "name": "ina3221_main",
+      "type": "INA3221",
+      "i2c_bus": "Wire",
+      "i2c_address": "0x40",
+      "channels": [
+        {
+          "channel_id": 1,
+          "name": "drive_motor"
+        },
+        {
+          "channel_id": 2,
+          "name": "compute_rail"
+        },
+        {
+          "channel_id": 3,
+          "name": "accessory_rail"
+        }
+      ]
+    },
+    {
+      "sensor_id": 1,
+      "name": "ina260_aux",
+      "type": "INA260",
+      "i2c_bus": "Wire1",
+      "i2c_address": "0x41",
+      "channels": [
+        {
+          "channel_id": 1,
+          "name": "single_channel"
+        }
+      ]
+    }
+  ]
+}
