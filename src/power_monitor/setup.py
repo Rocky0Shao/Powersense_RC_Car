@@ -25,7 +25,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'bridge_node = power_monitor.serial_bridge:main'
+            'bridge_node = power_monitor.serial_bridge:main',
+            'fake_power_node = power_monitor.fake_power_node:main',
         ],
     },
 )
