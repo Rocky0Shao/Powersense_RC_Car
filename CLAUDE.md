@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a research robotics project benchmarking energy-to-performance trade-offs for autonomous navigation. It uses ROS 2 Jazzy on a Jetson Nano with an Intel RealSense D455, RPLidar A2M8, and INA3221/INA260 power monitors. The core metric is Energy-per-Meter (EpM = ∫P(t)dt / distance).
+This is a research robotics project benchmarking energy-to-performance trade-offs for autonomous navigation. It uses ROS 2 Jazzy on a Raspberry Pi 4 Model B with an Intel RealSense D455, RPLidar A2M8, and INA3221/INA260 power monitors. The core metric is Energy-per-Meter (EpM = ∫P(t)dt / distance).
 
 ## Environment Setup (Required Order)
 

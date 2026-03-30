@@ -32,7 +32,7 @@ My goal is to provide a systematic method to measure how different configuration
 | **Chassis** | RC Chassis | Mobile platform |
 | **Vision** | Intel RealSense D455 | Stereo depth & VSLAM |
 | **Lidar** | RPLidar A2M8 | 2D/3D Obstacle detection |
-| **Compute** | Jetson Nano | Onboard inference |
+| **Compute** | Raspberry Pi 4 Model B | Onboard inference |
 | **Power Mon.** | TI INA3221 | 3-ch voltage/current/power sensing |
 | **Power Mon.** | Adafruit INA260 | High-side current/voltage/power sensing |
 
